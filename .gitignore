@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+checkpoints/*.pt
+results/*.png
+results/*.json
+results/*.csv
+results/optuna_study.db
+data/UCI HAR Dataset/
+data/UCI_HAR_Dataset.zip
