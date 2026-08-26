@@ -1,0 +1,29 @@
+seed: 42
+
+data:
+  root_dir: data/UCI HAR Dataset
+  validation_size: 0.15
+  normalize: true
+  num_workers: 0
+
+model:
+  cnn_channels: 64
+  kernel_size: 5
+  embed_dim: 128
+  num_heads: 4
+  num_attention_layers: 1
+  attention_dropout: 0.2
+  classifier_dropout: 0.3
+  feedforward_dim: 256
+
+training:
+  batch_size: 64
+  epochs: 40
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  patience: 7
+
+optimization:
+  n_trials: 20
+  epochs_per_trial: 15
+  patience: 4
